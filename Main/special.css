@@ -93,7 +93,6 @@ html{
   border-radius: 300px;
   width: 300px;
   overflow: hidden;
-  /* border: 1px solid red; */
 }
 .links{
   display: flex;
@@ -206,7 +205,7 @@ footer .maker{
   width: 655px;
   z-index: -4;
   border-radius: 25px;
-  border: 3px solid #e6e29e;
+  border: 3px solid #cecb8f;
 }
 .d1 .major-square::after{
   content: '';
@@ -228,7 +227,7 @@ footer .maker{
   width: 200px;
   z-index: -4;
   border-radius: 20px;
-  border: 3px solid #e6e29e;
+  border: 3px solid #cecb8f;
 }
 .d1 .minor-square::after{
   content: '';
