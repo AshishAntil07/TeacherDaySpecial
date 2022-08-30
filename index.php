@@ -7,9 +7,19 @@
     <title>Ashish Antil</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./Main/special.css">
+    <link rel="stylesheet" href="special.css">
   </head>
   <body>
+
+    <div class="design d1">
+      <div class="major-square"></div>
+      <div class="major-square"></div>
+
+      <div class="minor-square"></div>
+      <div class="minor-square"></div>
+      <div class="minor-square"></div>
+      <div class="minor-square"></div>
+    </div>
 
     <div class="navBar">
       <h3>Ashish Antil</h3>
@@ -41,8 +51,8 @@
           <div class="pictureFrame"></div>
         </div>
         <div class="details">
-          <div class="name">Ashish Antil</div>
-          <div class="description">An experienced Programmer at Microsoft.</div>
+          <div class="name">&nbsp;</div>
+          <div class="description"></div>
           <div class="links">
             <a href="#About">About</a>
             <a href="#Achievements">Achievements</a>
@@ -55,11 +65,6 @@
       <h1 heading>About</h1>
       <div class="container">
         <section>
-          <h2 heading>General</h2>
-          <div class="content"></div>
-        </section>
-        <section>
-          <h2 heading>Employable</h2>
           <div class="content"></div>
         </section>
       </div>
@@ -76,23 +81,25 @@
           <h2 heading>Graduation</h2>
           <div class="content"></div>
         </section>
+      </div>
+    </div>
+
+    <div class="main" id='achivmnts'>
+      <h1 heading>Achievements</h1>
+      <div class="container">
         <section>
-          <h2 heading>Employment</h2>
+          <div class="content"></div>
+        </section>
+        <section>
+          <div class="content"></div>
+        </section>
+        <section>
           <div class="content"></div>
         </section>
       </div>
     </div>
 
-    <div class="main" id='Achievements'>
-      <h1 heading>Achievements</h1>
-      <div class="container">
-        <section></section>
-        <section></section>
-        <section></section>
-      </div>
-    </div>
-
-    <footer>
+    <footer id='Achievements'>
       <section class="maker">
         <div>Made with ❤ by&nbsp;</div>
         <a github href="https://github.com/AshishAntil07">Ashish</a>
@@ -113,6 +120,6 @@
       </div>
     </footer>
     
-    <script src="./Main/special.js" async defer></script>
+    <script src="special.js" async defer></script>
   </body>
 </html>
