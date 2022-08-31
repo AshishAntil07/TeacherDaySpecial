@@ -24,9 +24,9 @@ if(window.innerWidth <= 700){
 const texts = ['Ashish Antil', 'An experienced Programmer at Microsoft.', "I'm Ashish Antil, a part time programmer.", 'Schooled at Tika Ram Model School', 'Not graduated till now.', 'hello world galkne;', 'asjg;aioehagf', 'g;aliehja;lgjhdea'];
 const contentElements = document.querySelectorAll('.content');
 
-if(window.innerWidth < window.innerHeight){
+if(screen.width < screen.height){
   for(let i=0; i<mainElements.length; i++){
-    mainElements[i].style.maxHeight = (height+height/2)+'px';
+    mainElements[i].style.maxHeight = screen.availHeight+'px';
   }
 }
 
