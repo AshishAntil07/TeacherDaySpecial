@@ -24,6 +24,12 @@ if(window.innerWidth <= 700){
 const texts = ['Ashish Antil', 'An experienced Programmer at Microsoft.', "I'm Ashish Antil, a part time programmer.", 'Schooled at Tika Ram Model School', 'Not graduated till now.', 'hello world galkne;', 'asjg;aioehagf', 'g;aliehja;lgjhdea'];
 const contentElements = document.querySelectorAll('.content');
 
+if(window.innerWidth < window.innerHeight){
+  for(let i=0; i<mainElements.length; i++){
+    mainElements[i].style.maxHeight = (height+height/2)+'px';
+  }
+}
+
 function lineTyper(line, elem){
   const charInterval = setInterval(() => {
     elem.innerHTML = elem.innerHTML.replace('&nbsp;', '');
