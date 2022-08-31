@@ -24,7 +24,7 @@ if(window.innerWidth <= 700){
 const texts = ['Ashish Antil', 'An experienced Programmer at Microsoft.', "I'm Ashish Antil, a part time programmer.", 'Schooled at Tika Ram Model School', 'Not graduated till now.', 'hello world galkne;', 'asjg;aioehagf', 'g;aliehja;lgjhdea'];
 const contentElements = document.querySelectorAll('.content');
 
-screen.width < screen.height?document.querySelector('.navBar').style.width = height+'px':0;
+screen.width < screen.height?document.querySelector('.navBar').style.width = screen.width+'px':0;
 
 function lineTyper(line, elem){
   const charInterval = setInterval(() => {
