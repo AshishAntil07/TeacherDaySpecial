@@ -5,6 +5,7 @@ const designElements = document.getElementsByClassName('design');
 
 for(let i=0; i<mainElements.length; i++){
   mainElements[i].style.minHeight = height+'px';
+  mainElements[i].style.width = (screen.availWidth-40)+'px';
 }
 for(let z=0; z<designElements.length; z++){
   designElements[z].style.height = height+'px';
@@ -24,7 +25,9 @@ if(window.innerWidth <= 700){
 const texts = ['Ashish Antil', 'An experienced Programmer at Microsoft.', "I'm Ashish Antil, a part time programmer.", 'Schooled at Tika Ram Model School', 'Not graduated till now.', 'hello world galkne;', 'asjg;aioehagf', 'g;aliehja;lgjhdea'];
 const contentElements = document.querySelectorAll('.content');
 
-screen.width < screen.height?document.querySelector('.navBar').style.width = screen.availWidth-50+'px':0;
+if(screen.width < screen.height){
+  document.querySelector('.navBar').style.width = screen.availWidth-40+'px';
+};
 
 function lineTyper(line, elem){
   const charInterval = setInterval(() => {
