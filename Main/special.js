@@ -24,11 +24,7 @@ if(window.innerWidth <= 700){
 const texts = ['Ashish Antil', 'An experienced Programmer at Microsoft.', "I'm Ashish Antil, a part time programmer.", 'Schooled at Tika Ram Model School', 'Not graduated till now.', 'hello world galkne;', 'asjg;aioehagf', 'g;aliehja;lgjhdea'];
 const contentElements = document.querySelectorAll('.content');
 
-// if(screen.width < screen.height){
-//   for(let i=0; i<mainElements.length; i++){
-//     mainElements[i].style.maxHeight = mainElements[i].style.minHeight = screen.availHeight+'px';
-//   }
-// }
+screen.width < screen.height?document.querySelector('.navBar').style.width = height+'px':0;
 
 function lineTyper(line, elem){
   const charInterval = setInterval(() => {
