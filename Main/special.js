@@ -1,10 +1,10 @@
-const height = window.innerHeight;
+const height = screen.width<screen.height?screen.availHeight:window.innerHeight;
 const mainElements = document.getElementsByClassName('main');
 const containerElements = document.getElementsByClassName('container');
 const designElements = document.getElementsByClassName('design');
 
 for(let i=0; i<mainElements.length; i++){
-  mainElements[i].style.minHeight = (screen.width<screen.height?screen.availHeight:height)+'px';
+  mainElements[i].style.minHeight = height+'px';
 }
 for(let z=0; z<designElements.length; z++){
   designElements[z].style.height = height+'px';
