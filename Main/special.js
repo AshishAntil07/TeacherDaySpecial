@@ -40,10 +40,10 @@ for(let z = 0; z<document.querySelector('.contAchieve').children.length; z++){
 
 const homeText = [
   'Monika Tomar', 
-  'Professor at Tika Ram Model School', 
+  'Lecturer at Tika Ram Model School', 
 ];
 
-const description = "I'm Monika Tomar. I'm currently employed as a professor at Tika Ram Model School, Sonipat, Haryana. I believe in simplicity, honesty and transparency. I am my own favorite, and living my life at my own terms.  I love children and they love me!";
+const description = "I'm Monika Tomar. I'm currently employed as a lecturer at Tika Ram Model School, Sonipat, Haryana. There, I teach Social Science, and had taught French earlier. I am the Head of the House and exam coordinator. I also had been a great student in my school. I believe in simplicity, honesty and transparency. I am my own favorite, and living my life at my own terms. I love children and they love me!";
 const education = [
   'Did my matriculation and XII from CBSE Rishikul and Sambhu Dayal Modern School respectively.',
   'Graduated from Maharashi Dayanand University(MDU) with MBA, Cannaught Palace with YMCA, and TTAH(Travel Tourism and Airport Handling).'
