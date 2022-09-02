@@ -7,7 +7,7 @@
     <title>Monika Tomar</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="https://github.com/AshishAntil07/TeacherDaySpecial/blob/main/Main/Pictures/Monika%20Ma'am.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Main/Pictures/Monika%20Ma'am.png" type="image/x-icon">
     <style>
     *{
       margin: 0;
@@ -341,7 +341,7 @@
     <div class="main" id='Home'>
       <div class="home">
         <div class="picture">
-          <img src="https://github.com/AshishAntil07/TeacherDaySpecial/blob/main/Main/Pictures/Monika%20Ma'am.png" style='height:350px;width:250px;margin-right: 10px;' alt="Monika Tomar">
+          <img src="Main/Pictures/Monika%20Ma'am.png" style='height:350px;width:250px;margin-right: 10px;' alt="Monika Tomar">
           <div class="pictureFrame"></div>
           <div class="pictureFrame"></div>
         </div>
