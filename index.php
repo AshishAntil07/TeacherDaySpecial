@@ -154,7 +154,7 @@
     }
     .container section{
       box-sizing: border-box;
-      min-height: 250px;
+      min-height: 200px;
       min-width: 300px;
       margin-bottom: 20px;
       background: #e6e29e;
