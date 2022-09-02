@@ -77,10 +77,8 @@ html{
 }
 .picture img{
   position: absolute;
-  height: 300px;
-  width: 300px;
   z-index: 1;
-  transform: translate(0, 15%);
+  transform: translate(0, 10%);
 }
 .picture{
   height: 300px;
