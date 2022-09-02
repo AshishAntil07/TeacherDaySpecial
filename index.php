@@ -7,7 +7,6 @@
     <title>Monika Tomar</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./Main/special.css">
     <link rel="shortcut icon" href="./Main/Pictures/Monika Ma'am.png" type="image/x-icon">
     <style>
     *{
