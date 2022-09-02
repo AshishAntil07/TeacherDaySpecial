@@ -460,7 +460,12 @@
           justify-content: center;
           align-items: center;
           padding: 0;
+          cursor: default;
+          filter: brightness(95%);
+          transition: filter .4s;
         `)
+        document.querySelector('.contAchieve').children[z].addEventListener('mouseover', e=>document.querySelector('.contAchieve').children[z].style.filter = 'brightness(100%)')
+        document.querySelector('.contAchieve').children[z].addEventListener('mouseout', e=>document.querySelector('.contAchieve').children[z].style.filter = 'brightness(95%)')
       }
 
       const homeText = [
@@ -468,10 +473,10 @@
         'Lecturer at Tika Ram Model School', 
       ];
 
-      const description = "I'm Monika Tomar. I'm currently employed as a lecturer at Tika Ram Model School, Sonipat, Haryana. There, I teach Social Science, and had taught French earlier. I am the Head of the House and exam coordinator. I also had been a great student in my school. I believe in simplicity, honesty and transparency. I am my own favorite, and living my life at my own terms. I love children and they love me!";
+      const description = "I'm Monika Tomar, and I'm currently employed as a lecturer at Tika Ram Model School, Sonipat, Haryana. There, I teach Social Science and had taught French earlier. I am the Head of Amity House and also remained exam coordinator. I had also been a great student in my school. I remain joyful, active, and happy. I never become sad and don't let others be sad. I believe in simplicity. I'm very honest and punctual in my job. I am my own favorite and live my life on my own terms. I love children and they love me! You will know more about me in a few moments.";
       const education = [
-        'Did my matriculation and XII from CBSE Rishikul and Sambhu Dayal Modern School respectively.',
-        'Graduated from Maharashi Dayanand University(MDU) with MBA, Cannaught Palace with YMCA, and TTAH(Travel Tourism and Airport Handling).'
+        'Did my matriculation and post-matriculation from Rishikul affiliated with CBSE and Sambhu Dayal Modern School respectively.',
+        'Got my MBA degree from Maharashi Dayanand University(MDU), YMCA from Cannaught Palace, and TTAH(Travel Tourism and Airport Handling).'
       ]
       const achievements = [
         'House Head',
