@@ -7,7 +7,7 @@
     <title>Monika Tomar</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="special.css">
+    <link rel="stylesheet" href="./Main/special.css">
   </head>
   <body>
 
@@ -128,6 +128,6 @@
       </div>
     </footer>
     
-    <script src="special.js" async defer></script>
+    <script src="./Main/special.js" async defer></script>
   </body>
 </html>
