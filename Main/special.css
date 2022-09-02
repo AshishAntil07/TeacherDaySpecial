@@ -85,13 +85,12 @@ html{
 .picture{
   height: 300px;
   width: 200px;
-  margin-right: -25px;
+  margin-right: 25px;
   display: flex;
   justify-content: center;
   transform: translate(0, 0);
   align-items: flex-end;
   border-radius: 300px;
-  width: 300px;
   overflow: hidden;
 }
 .links{
@@ -177,18 +176,11 @@ h1[heading]::after{
   text-align: justify;
 }
 footer{
-  height: 50px;
+  height: 60px;
   display: flex;
   justify-content: space-around;
+  position: relative;
   align-items: center;
-}
-footer::before{
-  width: 90%;
-  content: '';
-  height: 1px;
-  background: #5f461a;
-  position: absolute;
-  margin-top: -50px;
 }
 footer .maker{
   display: flex;
@@ -286,8 +278,6 @@ footer .maker{
   }
 
   footer{
-    display: flex;
-    align-items: center;
     flex-flow: column nowrap;
   }
   .navigator section{
@@ -295,5 +285,11 @@ footer .maker{
   }
   .navigator section:first-child, .navigator section:nth-child(2), .navigator section:nth-child(3){
     margin-right: 20px;
+  }
+}
+@media screen and (max-width: 400px){
+  .container section{
+    max-width: 90%;
+    min-width: 90%;
   }
 }
