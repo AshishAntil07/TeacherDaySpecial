@@ -1,15 +1,14 @@
 const height = screen.width<screen.height?screen.availHeight:window.innerHeight;
-const mainElements = document.getElementsByClassName('main');
+const mainElements = [...document.getElementsByClassName('main')];
 const containerElements = document.getElementsByClassName('container');
-const designElements = document.getElementsByClassName('design');
+const designElements = [...document.getElementsByClassName('design')];
 
 for(let i=0; i<mainElements.length; i++){
   mainElements[i].style.minHeight = height+'px';
   mainElements[i].style.width = screen.availWidth+'px';
 }
-for(let z=0; z<designElements.length; z++){
-  designElements[z].style.height = height+'px';
-}
+mainElements.forEach(elem => {elem.style.minHeight=height+'px';elem.style.width=screen.availWidth+'px'});
+designElements.forEach(elem => elem.style.height=height+'px');
 
 for(let j=0; j<containerElements.length-1; j++){
   for(let x=0; x<containerElements[j].children.length; x++){
@@ -39,8 +38,7 @@ for(let z = 0; z<document.querySelector('.contAchieve').children.length; z++){
     filter: brightness(95%);
     transition: filter .4s;
   `)
-  document.querySelector('.contAchieve').children[z].addEventListener('mouseover', e=>document.querySelector('.contAchieve').children[z].style.filter = 'brightness(100%)')
-  document.querySelector('.contAchieve').children[z].addEventListener('mouseout', e=>document.querySelector('.contAchieve').children[z].style.filter = 'brightness(95%)')
+  ['over', 'out'].forEach(e=>document.querySelector('.contAchieve').children[z].addEventListener(`mouse${e}`, ev=>document.querySelector('.contAchieve').children[z].style.filter=`brightness(${100-(e==='over'?0:5)}%)`));
 }
 
 const homeText = [
@@ -89,23 +87,17 @@ if(screen.width > screen.height){
   let contentDone = [false, false, false];
 
   const animate = () => {
-    console.log('fired');
     const top = document.documentElement.scrollTop;
     if(top >= height/2 && top <= height + height/2 && !contentDone[0]){
       lineTyper(description, contentElements[0]);
       contentDone.splice(0, 1, true);
     }
     if(top >= height + height/2 && top <= height*2 + height/2 && !contentDone[1]){
-      lineTyper(education[0], contentElements[1]);
-      lineTyper(education[1], contentElements[2]);
+      [0,1].forEach(ind=>lineTyper(education[ind], contentElements[ind+1]))
       contentDone.splice(1, 1, true);
     }
     if(top >= height*2 + height/2 && !contentDone[2]){
-      lineTyper(achievements[0], contentElements[3]);
-      lineTyper(achievements[1], contentElements[4]);
-      lineTyper(achievements[2], contentElements[5]);
-      lineTyper(achievements[3], contentElements[6]);
-      lineTyper(achievements[4], contentElements[7]);
+      [0,1,2,3,4].forEach(ind => lineTyper(achievements[ind], contentElements[ind+3]));
       contentDone.splice(2, 1, true);
     }
   }
@@ -114,10 +106,8 @@ if(screen.width > screen.height){
 }else{
   let k=1;
   lineTyper(description, contentElements[0]);
-  for(let l=0 ;l<education.length; k++, l++){
-    lineTyper(education[l], contentElements[k]);
-  }
-  for(let m=0;m<achievements.length; k++, m++){
-    lineTyper(achievements[m], contentElements[k]);
-  }
+
+  for(let l=0 ;l<education.length; k++, l++) lineTyper(education[l], contentElements[k])
+
+  for(let m=0;m<achievements.length; k++, m++) lineTyper(achievements[m], contentElements[k])
 }
